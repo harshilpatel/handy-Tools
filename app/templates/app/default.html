@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <title>Harshil's Tools</title>
+	    {%load staticfiles%}
+	    <link rel="stylesheet" href="{%static 'app/css/vendor/bootstrap-3.0.0.css'%}">
+	    <script src="{%static 'app/js/vendor/jquery-1.10.2.js'%}"></script>
+	    <script src="{%static 'app/js/vendor/bootstrap-3.0.0.js'%}"></script>
+	    <script src="{%static 'app/js/vendor/moments.js'%}"></script>
+	    <script src="{%static 'app/js/vendor/moment-with-data.js'%}"></script>
+    </head>
+    <body>
+    	<nav class="navbar navbar-inverse">
+	        <div class="container">
+	            <div class="navbar-header">
+	              <a href="/" class="navbar-brand">Harshil's Toolkit</a>
+	                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+	                    <i class=" fa fa-bars fa-2x header-text"></i>
+	                </button>
+	                
+	            </div>
+	            <div class="navbar-collapse collapse " style="font-size:18px;margin-top:4px;">
+	                <ul class="nav navbar-nav navbar-right">
+	                    <!-- <li><a href="/" class="big-font" >Home</a></li> -->
+	                    <!-- <li><a href="/howItWorks">How It Works</a></li> -->
+
+	                    <li><a class="navigation header-text animate" href="/">timeConvert</a></li>
+	                   <!--  <li><a class="navigation header-text animate" href="/Trainer-On-Demand">Trainer at Home</a></li>
+	                    <li><a class="navigation header-text animate" href="/blog">Blog</a></li>
+	                    <li><a class="navigation header-text animate" href="/contact">Contact Us</a></li> -->
+
+	                </ul>
+	            </div>
+	        </div>
+ 		 </nav>
+    	{% block content %} {%endblock%}
+    </body>
+</html>
