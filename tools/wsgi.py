@@ -17,11 +17,11 @@ application = get_wsgi_application()
 
 
 if os.environ.get('environment') == 'heroku':
-	from whitenoise import WhiteNoise
-	from whitenoise.django import DjangoWhiteNoise
+	# from whitenoise import WhiteNoise
+	# from whitenoise.django import DjangoWhiteNoise
 	from dj_static import Cling
 	application = Cling(get_wsgi_application())
-	application = DjangoWhiteNoise(application)
+	# application = DjangoWhiteNoise(application)
 # from whitenoise.django import DjangoWhiteNoise
 
 # application = get_wsgi_application()
